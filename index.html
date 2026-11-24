@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festival Kuliner Bali</title>
+  <meta name="description" content="Tiga hari mencicipi masakan Bali dari tenant pilihan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#beranda">Festival Kuliner Bali</a>
+    <nav aria-label="Menu utama">
+      <ul class="menu">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#tenant">Tenant</a></li>
+        <li><a href="#daftar">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="hero-content">
+        <h1>Tiga hari, satu pulau, puluhan rasa.</h1>
+        <p>Cicipi babi guling, lawar, sate lilit, dan jajanan Bali langsung dari dapur para tenant. Datang bersama keluarga, pulang dengan perut penuh.</p>
+        <a class="btn" href="#daftar">Daftar jadi tenant</a>
+      </div>
+    </section>
+
+    <section id="jadwal" class="section">
+      <h2>Jadwal acara</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Rangkaian acara Jumat sampai Minggu</caption>
+          <thead>
+            <tr>
+              <th scope="col">Sesi</th>
+              <th scope="col">Hari 1 (Jumat)</th>
+              <th scope="col">Hari 2 (Sabtu)</th>
+              <th scope="col">Hari 3 (Minggu)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" rowspan="2">Siang<br>10.00–15.00</th>
+              <td>Pembukaan dan demo masak babi guling</td>
+              <td>Lomba masak lawar</td>
+              <td>Kelas membuat jaje Bali</td>
+            </tr>
+            <tr>
+              <td>Tur tenant bersama chef</td>
+              <td>Workshop sate lilit</td>
+              <td>Pasar jajanan anak</td>
+            </tr>
+            <tr>
+              <th scope="row">Sore<br>15.00–18.00</th>
+              <td colspan="3" class="span-all">Semua tenant buka. Gamelan live di panggung utama.</td>
+            </tr>
+            <tr>
+              <th scope="row">Malam<br>18.00–22.00</th>
+              <td>Tari Legong</td>
+              <td>Konser akustik</td>
+              <td>Penutupan dan pengumuman tenant terbaik</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="tenant" class="section">
+      <h2>Tenant tahun ini</h2>
+      <div class="grid">
+        <article class="card c1">
+          <h3>Warung Guling Ibu Made</h3>
+          <p class="meta">Makanan berat, Stan A1</p>
+          <p>Babi guling kulit renyah dengan sambal matah buatan sendiri.</p>
+        </article>
+        <article class="card c2">
+          <h3>Lawar Pak Wayan</h3>
+          <p class="meta">Makanan berat, Stan A2</p>
+          <p>Lawar sayur dan kelapa muda dengan bumbu base genep segar.</p>
+        </article>
+        <article class="card c3">
+          <h3>Sate Lilit Segara</h3>
+          <p class="meta">Makanan ringan, Stan B1</p>
+          <p>Sate lilit ikan tenggiri dibakar di atas sabut kelapa.</p>
+        </article>
+        <article class="card c4">
+          <h3>Betutu Kintamani</h3>
+          <p class="meta">Makanan berat, Stan B2</p>
+          <p>Ayam betutu dimasak lambat selama delapan jam.</p>
+        </article>
+        <article class="card c5">
+          <h3>Jaje Bali Nini</h3>
+          <p class="meta">Jajanan, Stan C1</p>
+          <p>Laklak, klepon, dan dadar gulung dari resep turun-temurun.</p>
+        </article>
+        <article class="card c6">
+          <h3>Es Daluman Sari</h3>
+          <p class="meta">Minuman, Stan C2</p>
+          <p>Es daluman dengan santan dan gula aren untuk siang yang panas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="daftar" class="section">
+      <h2>Daftar jadi tenant</h2>
+      <form id="form-tenant" action="#" method="post">
+        <label for="usaha">Nama usaha</label>
+        <input type="text" id="usaha" name="usaha" required placeholder="Contoh: Warung Bu Ketut">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="nama@email.com">
+
+        <label for="hp">No. HP</label>
+        <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" inputmode="numeric"
+               title="Isi 10 sampai 13 angka, tanpa spasi atau tanda hubung" placeholder="081234567890">
+
+        <label for="kategori">Kategori</label>
+        <select id="kategori" name="kategori" required>
+          <option value="">Pilih kategori</option>
+          <option>Makanan berat</option>
+          <option>Makanan ringan</option>
+          <option>Jajanan</option>
+          <option>Minuman</option>
+        </select>
+
+        <button type="submit" class="btn">Kirim pendaftaran</button>
+        <p id="pesan" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Festival Kuliner Bali. Tugas UTS PSSK.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
