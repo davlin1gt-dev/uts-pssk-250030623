@@ -152,7 +152,7 @@ tbody th { background: #dcebe7; white-space: nowrap; }
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .card:hover {
-  transform: translateY(-6px) scale(1.02);
+  transform: translateY(-6px) scale(1.04);
   box-shadow: 0 10px 24px rgba(15, 76, 69, 0.18);
 }
 .card h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
