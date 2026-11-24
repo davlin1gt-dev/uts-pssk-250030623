@@ -1,4 +1,5 @@
 # Festival Kuliner Bali
+Demo: https://davlin1gt-dev.github.io/uts-pssk-250030623/
 
 Landing page tugas UTS PSSK. HTML, CSS, dan sedikit JavaScript tanpa framework.
 
@@ -7,3 +8,4 @@ Landing page tugas UTS PSSK. HTML, CSS, dan sedikit JavaScript tanpa framework.
 - Tabel jadwal 3 hari (rowspan dan colspan)
 - Galeri tenant dengan CSS Grid (1 / 2 / 3 kolom)
 - Form pendaftaran dengan validasi HTML5
+
